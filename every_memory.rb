@@ -6,4 +6,8 @@ class EveryMemory < Sinatra::Base
     [200, {}, "This is Every Memory"]
   end
 
+  get "/api/:version/user/sign_in" do
+    [200, {}, {'id' => 1, 'email' => 'testing'}.to_json]
+  end
+
 end
