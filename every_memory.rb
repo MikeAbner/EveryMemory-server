@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'json'
 
 class EveryMemory < Sinatra::Base
 
@@ -7,7 +8,7 @@ class EveryMemory < Sinatra::Base
   end
 
   get "/api/:version/user/sign_in" do
-    [200, {}, {'id' => 1, 'email' => 'testing'}]
+    [200, {}, {'id' => 1, 'email' => 'testing'}.to_json]
   end
 
 end
