@@ -8,6 +8,7 @@ class EveryMemory < Sinatra::Base
   end
 
   get "/api/:version/user/sign_in" do
+    content_type :json
     [200, {}, {'id' => 1, 'email' => 'testing'}.to_json]
   end
 
