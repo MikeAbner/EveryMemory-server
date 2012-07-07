@@ -7,7 +7,7 @@ class EveryMemory < Sinatra::Base
   end
 
   get "/api/:version/user/sign_in" do
-    [200, {}, {'id' => 1, 'email' => 'testing'}.to_json]
+    [200, {}, {'id' => 1, 'email' => 'testing'}]
   end
 
 end
